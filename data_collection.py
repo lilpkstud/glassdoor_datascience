@@ -11,5 +11,6 @@ import pandas as pd
 path = "/Users/lilpkstud/Desktop/github_repo/glassdoor_datascience/chromedriver"
 
 
-df = gs.get_jobs('project manager', 15, False, path, 15)
+df = gs.get_jobs('project manager', 100, False, path, 15)
 
+df.to_csv('glassdoor_jobs.csv', index = False)

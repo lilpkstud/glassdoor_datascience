@@ -48,8 +48,8 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
         except NoSuchElementException:
             print(' x out failed')
             pass
-
         
+       
         #Going through each job in this page
         job_buttons = driver.find_elements_by_class_name("jl")  #jl for Job Listing. These are the buttons we're going to click.
         for job_button in job_buttons:  
